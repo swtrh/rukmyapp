@@ -3,3 +3,7 @@ extends layout
 block content
   h1= "Store"
   p Welcome to the store
+  
+  form(action='#{messageURL}', method='post')
+    input(type="text",name="message",placeholder="Enter a message",size="40")
+    input(type='submit',name='submit',value='Submit')
